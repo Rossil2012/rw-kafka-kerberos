@@ -11,7 +11,8 @@ services:
             - 4566:4566
 
     kerberos: 
-        image: rw-kerberos-docker
+        image: jairsjunior/kerberos-docker:0.0.4
+        build: ./kerberos-docker
         hostname: kerberos
         container_name: kerberos
         environment: 

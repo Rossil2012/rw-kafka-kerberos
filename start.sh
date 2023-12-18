@@ -1,9 +1,6 @@
 #!/bin/bash
 
-set -e
-
-docker build -f ./kerberos-docker/Dockerfile . -t rw-kerberos-docker
-# docker compose build
+docker compose build
 docker compose up -d kerberos
 
 while [ ! -f kerberos-keytabs/kafka_client1.keytab ]; 
