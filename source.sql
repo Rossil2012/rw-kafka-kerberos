@@ -1,4 +1,4 @@
-CREATE SOURCE IF NOT EXISTS src_keytab (foo varchar)
+CREATE TABLE IF NOT EXISTS src_keytab (foo varchar)
 WITH (
    connector='kafka',
    topic='test-topic',
@@ -10,3 +10,5 @@ WITH (
    properties.sasl.kerberos.principal='kafka/zookeeper@KERBEROS',
    properties.sasl.kerberos.keytab='/keytab/kafka_client1.keytab'
 ) FORMAT PLAIN ENCODE JSON;
+
+SELECT * FROM src_keytab;

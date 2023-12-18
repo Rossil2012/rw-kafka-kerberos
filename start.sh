@@ -13,4 +13,5 @@ docker compose down
 
 sleep 5;
 
+docker pull ghcr.io/risingwavelabs/risingwave:pack-kinit
 docker stack deploy -c docker-compose.yml kafka-kerberos
