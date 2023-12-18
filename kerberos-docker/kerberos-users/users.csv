@@ -1,4 +1,0 @@
-kafka,broker,kafka_broker
-kafka,zookeeper,kafka_client1
-kafka,schema-registry,kafka_schema-registry
-kafka,rest-proxy,kafka_rest-proxy,teste1234
